@@ -1,38 +1,118 @@
+body {
+    margin: 0;
+    padding-top: 0;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.to-do-list {
+    padding: 10px;
+}
+
+.to-do-items {
+    margin-bottom: 30px;
+}
+
+.to-do-item {
+    background-color: burlywood;
+    width: 20%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.input-area {
+    margin-top: 10px;
+}
+
+.input[type=text] {
+    width: 20%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+.btn {
+    margin-top: 10px;
+    display: block;
+    width: 20%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+ul {
+    margin-top: 0;
+    background-color: burlywood;
+    width: 100%;
+    height: 30px;
+}
+
+li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+li:hover {
+    background-color: #ccc;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
 }
